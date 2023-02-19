@@ -1,8 +1,5 @@
-//function treeConstructor(strArr){}
 
-
-//module.exports = TreeConstructor
-function TreeConstructor(strArr) {
+function treeConstructor(strArr) {
     var relations = {};
     for (var i = 0; i < strArr.length; i++) {
     var pair = strArr[i].slice(1, -1).split(",");
@@ -24,8 +21,8 @@ function TreeConstructor(strArr) {
     return true;
     }
     
-    console.log(TreeConstructor(["(1,2)", "(2,4)","(5,2)", "(7,2)","(9,5)"])); 
-    console.log(TreeConstructor(["(1,2)", "(3,2)", "(2,12)", "(5,2)"]));
+    console.log(treeConstructor(["(1,2)", "(2,4)","(5,2)", "(7,2)","(9,5)"])); 
+    console.log(treeConstructor(["(1,2)", "(3,2)", "(2,12)", "(5,2)"]));
 
 
 module.exports = treeConstructor;
